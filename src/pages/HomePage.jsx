@@ -26,7 +26,7 @@ export default HomePage;
 
 const loadItems = async () => {
   const response = await fetch(
-    "https://my-first-project-react-h-a50f4-default-rtdb.firebaseio.com/mydb.json"
+    "api"
   );
 
   if (!response.ok) {
