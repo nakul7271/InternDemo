@@ -12,7 +12,7 @@ export const sendCartData = (cart) => {
 
     const sendRequest = async () => {
       const response = await fetch(
-        "https://my-first-project-react-h-a50f4-default-rtdb.firebaseio.com/mycartdb.json",
+        "api",
         {
           method: "PUT",
           body: JSON.stringify({
@@ -61,7 +61,7 @@ export const fetchCartData = () => {
 
     const sendReq = async () => {
       const response = await fetch(
-        "https://my-first-project-react-h-a50f4-default-rtdb.firebaseio.com/mycartdb.json"
+        "api"
       );
 
       const responseData = await response.json();
